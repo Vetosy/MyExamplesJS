@@ -4,4 +4,7 @@
 @import "settings";
 
 // подключение компонентов страницы
-@import "./components/header";
+@import "./components/openhiddenblock";
+@import "./components/accordion";
+@import "./components/tabs";
+@import "./components/modal";

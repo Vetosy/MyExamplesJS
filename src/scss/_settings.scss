@@ -36,10 +36,6 @@ a {
   overflow: hidden;
 }
 
-.is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
-}
-
 .btn-reset {
   user-select: none;
   border: none;
@@ -122,4 +118,8 @@ a {
   display: grid;
   grid-template-rows: repeat(12, 1fr);
   gap: 30px;
+}
+
+.none {
+  display: none;
 }
