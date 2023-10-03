@@ -53,8 +53,3 @@ $browser-context: 16; // Default
         margin-top: $value;
     }
 }
-
-@mixin pseudo() {
-    content: "";
-    display: block;
-}

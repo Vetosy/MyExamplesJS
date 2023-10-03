@@ -1,7 +1,13 @@
 .block {
+  padding-top: 50px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
   &__btn {
     padding: 10px 20px;
-    margin-bottom: 20px;
     border-radius: 10px;
     font-weight: 700;
     color: rgb(0, 0, 0);
@@ -15,13 +21,17 @@
 
   &__content {
     margin: 0;
+    margin-top: 20px;
     max-width: 600px;
     border: 1px solid rgb(189, 187, 187);
     padding: 10px 20px;
     border-radius: 10px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
 }
 
 .block-hidden {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
 }
