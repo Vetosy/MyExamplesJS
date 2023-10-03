@@ -1,24 +1,17 @@
-.exmaple-accordion {
+.example {
   overflow: hidden;
   padding: 130px 0;
+}
 
-  &__title {
-    margin-bottom: 60px;
-    text-align: center;
-  }
+.accordion {
+  @include mb(10px);
 
-  .accordion {
-    @include mb(10px);
+  max-width: 960px;
+  margin: 0 auto;
 
-    max-width: 960px;
-    margin: 0 auto;
-  }
-
-  .accordion__wrapper {
+  &__control {
     @include flex-all-sb;
-  }
 
-  .accordion__control {
     padding: 30px 40px;
     background-color: rgba(0, 0, 0, 0.2);
     border: 2px solid var(--border-color);
@@ -32,7 +25,7 @@
     }
   }
 
-  .accordion__title {
+  &__title {
     display: block;
     max-width: 640px;
     text-align: left;
@@ -44,10 +37,7 @@
     transition: color 0.3s ease;
   }
 
-  .accordion__icon {
-    text-align: right;
-    display: inline-block;
-
+  &__icon {
     svg {
       width: 30px;
       height: 15px;
@@ -57,40 +47,41 @@
     }
   }
 
-  .accordion__descr {
+  &__descr {
+    margin: 0;
     display: block;
     text-align: left;
     transition: color 0.3s ease;
   }
 
-  .accordion__content {
+  &__content {
     display: inline-block;
     padding: 0;
   }
-}
 
-.is-open {
-  .accordion__control {
-    background-color: var(--light-color);
-    border: 2px solid var(--light-color);
-  }
-
-  .accordion__title {
-    color: var(--mine-color);
-  }
-
-  .accordion__icon {
-    svg {
-      fill: var(--mine-color);
+  .is-open {
+    .accordion__control {
+      background-color: var(--light-color);
+      border: 2px solid var(--light-color);
     }
-  }
 
-  .accordion__content {
-    padding: 10px 0 0;
-    opacity: 1;
-  }
+    .accordion__title {
+      color: var(--mine-color);
+    }
 
-  .accordion__descr {
-    color: var(--mine-color);
+    .accordion__icon {
+      svg {
+        fill: var(--mine-color);
+      }
+    }
+
+    .accordion__content {
+      padding: 10px 0 0;
+      opacity: 1;
+    }
+
+    .accordion__descr {
+      color: var(--mine-color);
+    }
   }
 }

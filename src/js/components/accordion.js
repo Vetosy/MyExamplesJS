@@ -2,12 +2,12 @@ import {
   Accordion
 } from '../functions/accordion';
 
-const answersAccordions = document.querySelector('.answers__accordions');
+const Accordions = document.querySelector('.accordion');
 
-if (answersAccordions) {
-  const accordionAnswers1 = new Accordion('.accordion--1', {
+if (Accordions) {
+  const accordion1 = new Accordion('.accordion__item--1', {
     speed: 500,
-    parent: answersAccordions,
+    parent: Accordions,
     isControlEnabled: false,
   });
 }
